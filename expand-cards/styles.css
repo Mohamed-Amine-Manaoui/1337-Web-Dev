@@ -1,0 +1,72 @@
+ body {
+    padding: 0;
+    margin: 0;
+    transition: all 0.35s linear;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-image: url('_images/new.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gallery{
+    /* border: 5px solid black; */
+     display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: row;
+}
+
+.img-card{
+    /* border: 5px solid black; */
+    width: 4rem;
+    height: 410px;
+    margin: 0.5rem;
+    overflow: hidden;
+    border-radius: 2rem;
+    position: relative; /**/
+    background-color: rgb(245, 52, 52);
+    transition: all 0.75s ease-in-out;
+}
+.img-card.active{
+    width: 50vw;
+}
+.img-card:not(.active):hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 24px 32px -12px rgb(20, 19, 19);
+}
+.img-card img {
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-card label {
+    padding: 1.25rem;
+    border: 1px solid rgb(193, 193, 228);
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; 
+    color: rgb(255, 230, 0);
+    backdrop-filter: blur(8px) brightness(80%);
+    -webkit-backdrop-filter: blur(10px) brightness(80%);
+    font-size: 3rem;
+    font-weight: 600;
+    word-break: break-all;
+    text-transform: uppercase;
+}
+
+.img-card.active label {
+    text-align: center;
+    font-size: 1.25rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    border-radius: 16px;
+}
