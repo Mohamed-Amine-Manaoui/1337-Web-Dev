@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    width: 35%;
+    width: 20%;
     background-color: white;
     border: 1px solid black;
     border-radius: 20px;
@@ -20,7 +20,7 @@ body {
 }
 .container .hover-img { 
     width: 100%;
-    height: 150px;
+    height: 230px;
     background-image: url('sanji2.png');
     background-size: cover;
     background-position: center;
