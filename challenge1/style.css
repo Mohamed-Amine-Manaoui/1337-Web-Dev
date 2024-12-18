@@ -64,3 +64,10 @@ td {
     text-align: left;
     border-bottom: 2px solid #dddcdc;;
 }
+
+
+@media screen and (max-width : 1440px) {
+    .container { 
+        width: 90%;
+    }
+}
